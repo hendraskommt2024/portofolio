@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Saya</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        text-align: center;
+        padding: 20px;
+        background-color: #007bff;
+        color: #fff;
+      }
+
+      section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      header h1 {
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      header img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+      }
+
+      header p {
+        font-style: italic;
+        color: #eee;
+      }
+      section h2 {
+        color: #007bff;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 5px;
+      }
+
+      section ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      section li {
+        margin-bottom: 8px;
+      }
+      section h2 {
+        color: #007bff;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 5px;
+      }
+
+      section article {
+        margin-bottom: 20px;
+      }
+
+      section article h3 {
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Nama Siswa</h1>
+      <img
+        src="https://w3schools.com/w3images/profile_girl.jpg"
+        alt="Foto Profil"
+      />
+    </header>
+    <section>
+      <h2>Tentang Saya</h2>
+      <p>Seorang siswa yang tertarik dalam dunia pemrograman web.</p>
+    </section>
+    <section>
+      <h2>Pendidikan</h2>
+      <ul>
+        <li>SMK Teknik Informatika</li>
+        <li>Pelatihan Web Development</li>
+      </ul>
+      <h2>Keahlian</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Proyek Terbaru</h2>
+      <article>
+        <h3>Web Development Workshop</h3>
+        <p>
+          Menggunakan HTML, CSS, dan JavaScript untuk membuat halaman web
+          sederhana.
+        </p>
+      </article>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var judul = document.querySelector("header h1");
+        judul.textContent = "Nama Siswa - Portofolio";
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var fotoProfil = document.querySelector("header img");
+        fotoProfil.addEventListener("mouseover", function () {
+          fotoProfil.style.opacity = "0.8";
+        });
+        fotoProfil.addEventListener("mouseout", function () {
+          fotoProfil.style.opacity = "1";
+        });
+      });
+    </script>
+
+    <button onclick="tampilkanPopUp()">Klik Saya!</button>
+
+    <script>
+      function tampilkanPopUp() {
+        alert("Terima kasih atas kunjungan Anda!");
+      }
+    </script>
+  </body>
+</html>
